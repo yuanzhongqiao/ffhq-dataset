@@ -123,41 +123,7 @@ optional arguments:
   --no-padding          do not apply blur-padding outside and near the image borders
   --source-dir DIR      where to find already downloaded FFHQ source data
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="> python download_ffhq.py -h
-usage: download_ffhq.py [-h] [-j] [-s] [-i] [-t] [-w] [-r] [-a]
-                        [--num_threads NUM] [--status_delay SEC]
-                        [--timing_window LEN] [--chunk_size KB]
-                        [--num_attempts NUM]
-
-Download Flickr-Face-HQ (FFHQ) dataset to current working directory.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -j, --json            download metadata as JSON (254 MB)
-  -s, --stats           print statistics about the dataset
-  -i, --images          download 1024x1024 images as PNG (89.1 GB)
-  -t, --thumbs          download 128x128 thumbnails as PNG (1.95 GB)
-  -w, --wilds           download in-the-wild images as PNG (955 GB)
-  -r, --tfrecords       download multi-resolution TFRecords (273 GB)
-  -a, --align           recreate 1024x1024 images from in-the-wild images
-  --num_threads NUM     number of concurrent download threads (default: 32)
-  --status_delay SEC    time between download status prints (default: 0.2)
-  --timing_window LEN   samples for estimating download eta (default: 50)
-  --chunk_size KB       chunk size for each download thread (default: 128)
-  --num_attempts NUM    number of download attempts per file (default: 10)
-  --random-shift SHIFT  standard deviation of random crop rectangle jitter
-  --retry-crops         retry random shift if crop rectangle falls outside image (up to 1000
-                        times)
-  --no-rotation         keep the original orientation of images
-  --no-padding          do not apply blur-padding outside and near the image borders
-  --source-dir DIR      where to find already downloaded FFHQ source data" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>&gt; python ..\download_ffhq.py --json --images
 Downloading JSON metadata...
@@ -166,19 +132,7 @@ Parsing JSON metadata...
 Downloading 70000 files...
 | 100.00% done  70001/70001 files  89.19 GB/89.19 GB  59.87 MB/s  ETA: done
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="> python ..\download_ffhq.py --json --images
-Downloading JSON metadata...
-\ 100.00% done  2/2 files  0.25/0.25 GB   43.21 MB/s  ETA: done
-Parsing JSON metadata...
-Downloading 70000 files...
-| 100.00% done  70001/70001 files  89.19 GB/89.19 GB  59.87 MB/s  ETA: done" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <p dir="auto"><font _mstmutation="1" _msttexthash="46829029" _msthash="270">The script also serves as a reference implementation of the automated scheme that we used to align and crop the images. Once you have downloaded the in-the-wild images with , you can run  to reproduce exact replicas of the aligned 1024×1024 images using the facial landmark locations included in the metadata.</font><code>python download_ffhq.py --wilds</code><code>python download_ffhq.py --align</code></p>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="688688" _msthash="271">Reproducing the unaligned FFHQ</h3><a id="user-content-reproducing-the-unaligned-ffhq" class="anchor" aria-label="Permalink: Reproducing the unaligned FFHQ" href="#reproducing-the-unaligned-ffhq" _mstaria-label="1188863" _msthash="272"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -187,16 +141,7 @@ Downloading 70000 files...
     --source-dir &lt;path/to/downloaded/ffhq&gt; \
     --align --no-rotation --random-shift 0.2 --no-padding --retry-crops
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python download_ffhq.py \
-    --source-dir <path/to/downloaded/ffhq> \
-    --align --no-rotation --random-shift 0.2 --no-padding --retry-crops" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+  
   </div></div>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="110383" _msthash="274">Metadata</h2><a id="user-content-metadata" class="anchor" aria-label="Permalink: Metadata" href="#metadata" _mstaria-label="361218" _msthash="275"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font _mstmutation="1" _msttexthash="4522973" _msthash="276">The  file contains the following information for each image in a machine-readable format:</font><code>ffhq-dataset-v2.json</code></p>
@@ -245,57 +190,7 @@ Downloading 70000 files...
   ...
 }
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="{
-  &quot;0&quot;: {                                                 # Image index
-    &quot;category&quot;: &quot;training&quot;,                              # Training or validation
-    &quot;metadata&quot;: {                                        # Info about the original Flickr photo:
-      &quot;photo_url&quot;: &quot;https://www.flickr.com/photos/...&quot;,  # - Flickr URL
-      &quot;photo_title&quot;: &quot;DSCF0899.JPG&quot;,                     # - File name
-      &quot;author&quot;: &quot;Jeremy Frumkin&quot;,                        # - Author
-      &quot;country&quot;: &quot;&quot;,                                     # - Country where the photo was taken
-      &quot;license&quot;: &quot;Attribution-NonCommercial License&quot;,    # - License name
-      &quot;license_url&quot;: &quot;https://creativecommons.org/...&quot;,  # - License detail URL
-      &quot;date_uploaded&quot;: &quot;2007-08-16&quot;,                     # - Date when the photo was uploaded to Flickr
-      &quot;date_crawled&quot;: &quot;2018-10-10&quot;                       # - Date when the photo was crawled from Flickr
-    },
-    &quot;image&quot;: {                                           # Info about the aligned 1024x1024 image:
-      &quot;file_url&quot;: &quot;https://drive.google.com/...&quot;,        # - Google Drive URL
-      &quot;file_path&quot;: &quot;images1024x1024/00000/00000.png&quot;,    # - Google Drive path
-      &quot;file_size&quot;: 1488194,                              # - Size of the PNG file in bytes
-      &quot;file_md5&quot;: &quot;ddeaeea6ce59569643715759d537fd1b&quot;,    # - MD5 checksum of the PNG file
-      &quot;pixel_size&quot;: [1024, 1024],                        # - Image dimensions
-      &quot;pixel_md5&quot;: &quot;47238b44dfb87644460cbdcc4607e289&quot;,   # - MD5 checksum of the raw pixel data
-      &quot;face_landmarks&quot;: [...]                            # - 68 face landmarks reported by dlib
-    },
-    &quot;thumbnail&quot;: {                                       # Info about the 128x128 thumbnail:
-      &quot;file_url&quot;: &quot;https://drive.google.com/...&quot;,        # - Google Drive URL
-      &quot;file_path&quot;: &quot;thumbnails128x128/00000/00000.png&quot;,  # - Google Drive path
-      &quot;file_size&quot;: 29050,                                # - Size of the PNG file in bytes
-      &quot;file_md5&quot;: &quot;bd3e40b2ba20f76b55dc282907b89cd1&quot;,    # - MD5 checksum of the PNG file
-      &quot;pixel_size&quot;: [128, 128],                          # - Image dimensions
-      &quot;pixel_md5&quot;: &quot;38d7e93eb9a796d0e65f8c64de8ba161&quot;    # - MD5 checksum of the raw pixel data
-    },
-    &quot;in_the_wild&quot;: {                                     # Info about the in-the-wild image:
-      &quot;file_url&quot;: &quot;https://drive.google.com/...&quot;,        # - Google Drive URL
-      &quot;file_path&quot;: &quot;in-the-wild-images/00000/00000.png&quot;, # - Google Drive path
-      &quot;file_size&quot;: 3991569,                              # - Size of the PNG file in bytes
-      &quot;file_md5&quot;: &quot;1dc0287e73e485efb0516a80ce9d42b4&quot;,    # - MD5 checksum of the PNG file
-      &quot;pixel_size&quot;: [2016, 1512],                        # - Image dimensions
-      &quot;pixel_md5&quot;: &quot;86b3470c42e33235d76b979161fb2327&quot;,   # - MD5 checksum of the raw pixel data
-      &quot;face_rect&quot;: [667, 410, 1438, 1181],               # - Axis-aligned rectangle of the face region
-      &quot;face_landmarks&quot;: [...],                           # - 68 face landmarks reported by dlib
-      &quot;face_quad&quot;: [...]                                 # - Aligned quad of the face region
-    }
-  },
-  ...
-}" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="320957" _msthash="277">Acknowledgements</h2><a id="user-content-acknowledgements" class="anchor" aria-label="Permalink: Acknowledgements" href="#acknowledgements" _mstaria-label="685412" _msthash="278"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto" _msttexthash="25601524" _msthash="279">We thank Jaakko Lehtinen, David Luebke, and Tuomas Kynkäänniemi for in-depth discussions and helpful comments; Janne Hellsten, Tero Kuosmanen, and Pekka Jänis for compute infrastructure and help with the code release.</p>
